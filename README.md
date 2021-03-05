@@ -86,7 +86,7 @@ A string array that contains a list of file extensions that should be shown by t
 A map that maps file extensions with react-icons. Pass this parameter if you want specific files to have their own distinct icons. This prop works only if react-icons from the [react-icons](https://www.npmjs.com/package/react-icons) library are passed.  
 
 ### Example
-
+ 
 ```javascript
     import {FaFilePdf, FaFileVideo, FaFileAudio, FaFileWord} from 'react-icons/fa'
 
