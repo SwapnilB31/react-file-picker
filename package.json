@@ -6,12 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react",
+    "file-picker",
+    "react-file-picker",
+    "react-file-picker-ui"
+  ],
+  "author": "github.com/SwapnilB31",
   "license": "ISC",
   "dependencies": {
     "react": "^17.0.1",
     "react-icons": "^4.2.0",
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13"
   }
 }
