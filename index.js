@@ -1,5 +1,7 @@
 "use strict";
 
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -9,13 +11,17 @@ require("./index.css");
 
 var _fa = require("react-icons/fa");
 
-var _react = require("react");
+var _react = _interopRequireWildcard(require("react"));
 
 var _Dirent = _interopRequireDefault(require("./Dirent"));
 
 var _uuid = require("uuid");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -221,29 +227,29 @@ function FilePicker(_ref) {
     }
   }
 
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/_react["default"].createElement("div", {
     className: show ? 'file-picker-bg' : 'close-file-picker'
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "file-picker"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "address-bar"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "nav-buttons"
-  }, /*#__PURE__*/React.createElement("button", {
+  }, /*#__PURE__*/_react["default"].createElement("button", {
     onClick: goBack,
     className: "nav-button left ".concat(!backNavActive ? 'nav-button-inactive' : '')
-  }, " ", /*#__PURE__*/React.createElement(_fa.FaArrowLeft, null)), /*#__PURE__*/React.createElement("button", {
+  }, " ", /*#__PURE__*/_react["default"].createElement(_fa.FaArrowLeft, null)), /*#__PURE__*/_react["default"].createElement("button", {
     onClick: goForward,
     className: "nav-button ".concat(!forwNavActive ? 'nav-button-inactive' : '')
-  }, /*#__PURE__*/React.createElement(_fa.FaArrowRight, null))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/_react["default"].createElement(_fa.FaArrowRight, null))), /*#__PURE__*/_react["default"].createElement("div", {
     className: "address-field"
-  }, path)), /*#__PURE__*/React.createElement("div", {
+  }, path)), /*#__PURE__*/_react["default"].createElement("div", {
     className: "file-list",
     onClick: function onClick(e) {
       if (e.target.classList.contains('file-list')) setAllDirentsInActive();
     }
   }, dirents.map(function (val) {
-    return /*#__PURE__*/React.createElement(_Dirent["default"], {
+    return /*#__PURE__*/_react["default"].createElement(_Dirent["default"], {
       key: (0, _uuid.v4)(),
       direntObj: val,
       stateSetters: {
@@ -258,12 +264,12 @@ function FilePicker(_ref) {
       },
       iconsObj: iconsObj
     });
-  })), /*#__PURE__*/React.createElement("div", {
+  })), /*#__PURE__*/_react["default"].createElement("div", {
     className: "action-bar"
-  }, /*#__PURE__*/React.createElement("button", {
+  }, /*#__PURE__*/_react["default"].createElement("button", {
     onClick: returnSelectedPath,
     className: "action-button select-button mr-3"
-  }, "Select"), /*#__PURE__*/React.createElement("button", {
+  }, "Select"), /*#__PURE__*/_react["default"].createElement("button", {
     onClick: function onClick() {
       setShow(!show);
       cleanAllNavs();

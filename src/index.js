@@ -1,6 +1,6 @@
 import './index.css';
 import {FaArrowLeft, FaArrowRight} from 'react-icons/fa';
-import { useState, useEffect} from 'react';
+import React, { useState, useEffect} from 'react';
 import Dirent from './Dirent';
 import {v4 as uuid} from 'uuid';
 
