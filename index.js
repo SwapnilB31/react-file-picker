@@ -238,7 +238,7 @@ function FilePicker(_ref) {
   }, /*#__PURE__*/React.createElement(_fa.FaArrowRight, null))), /*#__PURE__*/React.createElement("div", {
     className: "address-field"
   }, path)), /*#__PURE__*/React.createElement("div", {
-    className: "file-list", 
+    className: "file-list",
     onClick: function onClick(e) {
       if (e.target.classList.contains('file-list')) setAllDirentsInActive();
     }

@@ -5,11 +5,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
+var _react = _interopRequireDefault(require("react"));
+
 require("./index.css");
 
 var _reactIcons = require("react-icons");
 
 var _fa = require("react-icons/fa");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 /** 
  * 
@@ -50,13 +54,13 @@ function Dirent(_ref) {
   var extension = nameParts[nameParts.length - 1];
 
   if (iconsObj && iconsObj[extension.toLowerCase()]) {
-    fileIcon = /*#__PURE__*/React.createElement(_reactIcons.IconContext.Provider, {
+    fileIcon = /*#__PURE__*/_react["default"].createElement(_reactIcons.IconContext.Provider, {
       value: {
         className: 'mr-3 dirent-file-icon'
       }
     }, iconsObj[extension.toLowerCase()]);
   } else {
-    fileIcon = /*#__PURE__*/React.createElement(_fa.FaFile, {
+    fileIcon = /*#__PURE__*/_react["default"].createElement(_fa.FaFile, {
       className: "mr-3 dirent-file-icon"
     });
   }
@@ -96,16 +100,16 @@ function Dirent(_ref) {
     }
   };
 
-  return isDirectory ? /*#__PURE__*/React.createElement("div", {
+  return isDirectory ? /*#__PURE__*/_react["default"].createElement("div", {
     className: "dirent dir",
     onDoubleClick: handleDblClick
-  }, /*#__PURE__*/React.createElement(_fa.FaFolder, {
+  }, /*#__PURE__*/_react["default"].createElement(_fa.FaFolder, {
     className: "mr-3 dirent-dir-icon"
-  }), " ", /*#__PURE__*/React.createElement("div", null, name)) : /*#__PURE__*/React.createElement("div", {
+  }), " ", /*#__PURE__*/_react["default"].createElement("div", null, name)) : /*#__PURE__*/_react["default"].createElement("div", {
     className: "dirent file ".concat(active ? 'dirent-active' : ''),
     onClick: setActive
-  }, " ", fileIcon, " ", /*#__PURE__*/React.createElement("div", null, name));
+  }, " ", fileIcon, " ", /*#__PURE__*/_react["default"].createElement("div", null, name));
 }
 
 var _default = Dirent;
-exports["default"] = _default; 
+exports["default"] = _default;
