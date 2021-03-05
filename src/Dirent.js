@@ -62,7 +62,7 @@ function Dirent({direntObj, stateSetters, stateVariables, iconsObj}) {
             }
             if(hist.indexOf(path) === -1) {
                 hist.push(path);
-                setHistory(hist);
+                setHistory(hist); 
             }
             setPath(path)
         }

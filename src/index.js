@@ -186,7 +186,7 @@ function FilePicker({show,setShow,scanDir,setSelectedPath, filters, iconsObj}) {
             </div>
         </div> 
     )  
-}
+} 
 
 
 export {FilePicker}
