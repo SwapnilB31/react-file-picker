@@ -35,12 +35,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1.2rem;
-  /*border: 1px solid black;*/
   -webkit-box-shadow: 3px 2px 19px -4px rgba(0, 0, 0, 0.75);
           box-shadow: 3px 2px 19px -4px rgba(0, 0, 0, 0.75);
   background-color: #f5f6f7;
-  /*background-color: rgb(243,255,98);*/
-  /*background-color: white;*/
   min-width: 360px;
 }
 
@@ -90,11 +87,9 @@
   outline: none;
   padding: 4px 7px;
   background-color: inherit;
-  /*border: 1px solid black;*/
   width: 22px;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
-  /*cursor: pointer;*/
 }
 
 .nav-button:not(.nav-button-inactive):hover {
@@ -155,9 +150,6 @@
 
 .dirent.dir {
   color: #383aaa;
-  /*svg {
-        color: #635c5c;
-    }*/
 }
 
 .dirent-dir-icon {
@@ -166,7 +158,6 @@
 
 .dirent-file-icon {
   color: #51a0eb !important;
-  /*box-shadow:  2px 1px 17px 0px rgba(0,0,0,0.75) !important;*/
 }
 
 .dirent-active {
@@ -177,7 +168,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*margin-bottom:0 rem;*/
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -192,7 +182,6 @@
   outline: none;
   padding: 7px 14px;
   background-color: white;
-  /*border : 1px solid black;*/
 }
 
 .action-button.select-button {

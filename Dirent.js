@@ -53,7 +53,6 @@ function Dirent({direntObj, stateSetters, stateVariables, iconsObj}) {
     }
 
     const handleDblClick = () => {
-        //console.log(`Double Click, path = ${path}`)
         if(isDirectory) {
             let hist = history;
             if(hist.indexOf(prevPath) > -1) {

@@ -24,19 +24,17 @@ function FilePicker({show,setShow,scanDir,setSelectedPath, filters, iconsObj}) {
     let direntArray = [];
 
     const filterSet = filters ? new Set(filters.map((val) => val.toLowerCase())) : new Set([]);
-    //console.log(filterSet)
 
     const [path,setPath] = useState('/')
     const [dirents,setDirents] = useState([]);
     const [backNavActive,setBackNavActive] = useState(false);
     const [forwNavActive,setForwNavActive] = useState(false);
     const [history,setHistory] = useState([]);
-    //const [changeWithNav,setChangeWithNav] = useState(false);
+
    
 
     useEffect(() => {
         const fetchDirentData = async () => {
-            //console.log('fetch dirent data')
             try {
                 let queryPath = path === "/" ? "/" : `${path}`
                 queryPath = queryPath.replace('//','/')
@@ -187,7 +185,7 @@ function FilePicker({show,setShow,scanDir,setSelectedPath, filters, iconsObj}) {
                 </div>
             </div>
         </div> 
-    )
+    )  
 }
 
 
