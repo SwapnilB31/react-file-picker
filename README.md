@@ -127,9 +127,9 @@ A map that maps file extensions with react-icons. Pass this parameter if you wan
 
 ## Demo
 
-Coming Soon
+View the demo [here](https://swapnilb31.github.io/react-file-picker-demo/)
 
 ## Full Example Code 
 
-Coming Soon
+Full Example Code available at [this repository](https://github.com/SwapnilB31/react-file-picker-demo). The Files in src/components show how to use the file picker with a static DirectoryObject as well as a File Server. 
 
