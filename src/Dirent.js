@@ -53,7 +53,7 @@ function Dirent({direntObj, stateSetters, stateVariables, iconsObj}) {
         }))
     }
 
-    const handleDblClick = () => {
+    const handleDirlClick = () => {
         if(isDirectory) {
             let hist = history;
             if(hist.indexOf(prevPath) > -1) {
@@ -70,7 +70,7 @@ function Dirent({direntObj, stateSetters, stateVariables, iconsObj}) {
     }
     return (
         isDirectory ?
-        <div className="dirent dir" onDoubleClick ={handleDblClick}><FaFolder className="mr-3 dirent-dir-icon"/> <div>{name}</div></div> :
+        <div className="dirent dir" onClick={handleDirClick}><FaFolder className="mr-3 dirent-dir-icon"/> <div>{name}</div></div> :
         <div className={`dirent file ${active ? 'dirent-active' : ''}`} onClick = {setActive}> {fileIcon} <div>{name}</div></div>
     )
 }
