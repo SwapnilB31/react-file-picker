@@ -53,7 +53,7 @@ function Dirent({direntObj, stateSetters, stateVariables, iconsObj}) {
         }))
     }
 
-    const handleDirlClick = () => {
+    const handleDirClick = () => {
         if(isDirectory) {
             let hist = history;
             if(hist.indexOf(prevPath) > -1) {

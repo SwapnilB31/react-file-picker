@@ -81,7 +81,7 @@ function Dirent(_ref) {
     }));
   };
 
-  var handleDirlClick = function handleDirlClick() {
+  var handleDirClick = function handleDirClick() {
     if (isDirectory) {
       var hist = history;
 
