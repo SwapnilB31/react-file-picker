@@ -81,7 +81,7 @@ function Dirent(_ref) {
     }));
   };
 
-  var handleDblClick = function handleDblClick() {
+  var handleDirlClick = function handleDirlClick() {
     if (isDirectory) {
       var hist = history;
 
@@ -102,7 +102,7 @@ function Dirent(_ref) {
 
   return isDirectory ? /*#__PURE__*/_react["default"].createElement("div", {
     className: "dirent dir",
-    onDoubleClick: handleDblClick
+    onClick: handleDirClick
   }, /*#__PURE__*/_react["default"].createElement(_fa.FaFolder, {
     className: "mr-3 dirent-dir-icon"
   }), " ", /*#__PURE__*/_react["default"].createElement("div", null, name)) : /*#__PURE__*/_react["default"].createElement("div", {
